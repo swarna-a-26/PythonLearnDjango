@@ -1,0 +1,341 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"live",
+				"live_stream_url"
+			],
+			[
+				"liv",
+				"live_stream_url"
+			],
+			[
+				"has",
+				"hasBoundingBox\tfunction"
+			],
+			[
+				"s",
+				"shape\tstatement"
+			],
+			[
+				"shape",
+				"shapeType"
+			],
+			[
+				"ret",
+				"ret"
+			],
+			[
+				"M",
+				"MULTIPATCH\tstatement"
+			],
+			[
+				"MU",
+				"MULTIPOINTM\tstatement"
+			],
+			[
+				"sha",
+				"shapeRecords\tstatement"
+			],
+			[
+				"sh",
+				"shapes\tfunction"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 87.0,
+		"last_filter": "install ",
+		"selected_items":
+		[
+			[
+				"install ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/swarnaananthan/python-learn-django/PythonLearnDjango"
+	],
+	"file_history":
+	[
+		"/Users/swarnaananthan/peloton_api/api/lib/orm/base/managers.py",
+		"/Users/swarnaananthan/peloton_api/api/rest_api/app/server/controllers/ride.py",
+		"/Users/swarnaananthan/peloton_api/api/data/models/ride.py",
+		"/Users/swarnaananthan/peloton_api/api/rest_api/app/server/utils.py",
+		"/Users/swarnaananthan/peloton_api/api/scripts/etl/extract.py",
+		"/Users/swarnaananthan/peloton_api/api/lib/orm/base/mixins.py",
+		"/Users/swarnaananthan/peloton_api/api/db/magichat/schema/change-logs/changelog-0210.json",
+		"/Users/swarnaananthan/peloton_api/api/lib/orm/base/relations.py",
+		"/Users/swarnaananthan/peloton_api/api/lib/orm/postgres/managers.py",
+		"/Users/swarnaananthan/peloton_api/api/data/models/shared/idtypes.py",
+		"/Users/swarnaananthan/peloton_api/api/db/magichat/schema/change-logs/changelog-0230.json",
+		"/Users/swarnaananthan/peloton_api/api/lib/orm/base/descriptors.py",
+		"/Users/swarnaananthan/peloton_api/api/db/magichat/schema/change-logs/changelog-0238.json",
+		"/Users/swarnaananthan/peloton_api/api/db/magichat/schema/change-logs/changelog-0227.json",
+		"/Users/swarnaananthan/peloton_api/api/db/magichat/schema/change-logs/changelog-0216.json",
+		"/Users/swarnaananthan/peloton_api/api/db/magichat/schema/change-logs/changelog-0218.json",
+		"/Users/swarnaananthan/peloton_api/api/db/magichat/schema/change-logs/changelog-0221.json",
+		"/Users/swarnaananthan/peloton_api/api/db/magichat/schema/change-logs/changelog-0222.json",
+		"/Users/swarnaananthan/peloton_api/api/db/magichat/schema/change-logs/changelog-0057.json",
+		"/Users/swarnaananthan/peloton_api/api/db/magichat/schema/change-logs/changelog-0201.json",
+		"/Users/swarnaananthan/peloton_api/api/db/magichat/schema/change-logs/changelog-0209.json",
+		"/Users/swarnaananthan/peloton_api/api/db/magichat/schema/change-logs/changelog-0202.json",
+		"/Users/swarnaananthan/peloton_api/api/db/magichat/schema/change-logs/changelog-0066.json",
+		"/Users/swarnaananthan/peloton_api/api/db/magichat/schema/change-logs/changelog-0075.json",
+		"/Users/swarnaananthan/peloton_api/api/db/magichat/schema/change-logs/changelog-0087.json",
+		"/Users/swarnaananthan/peloton_api/api/db/magichat/schema/change-logs/changelog-0101.json",
+		"/Users/swarnaananthan/peloton_api/api/db/magichat/schema/change-logs/changelog-0115.json",
+		"/Users/swarnaananthan/peloton_api/api/db/magichat/schema/change-logs/changelog-0117.json",
+		"/Users/swarnaananthan/peloton_api/api/db/magichat/schema/change-logs/changelog-0200.json",
+		"/Users/swarnaananthan/peloton_api/api/db/magichat/schema/change-logs/changelog-0053.json",
+		"/Users/swarnaananthan/peloton_api/api/db/magichat/schema/change-logs/changelog-0041.json",
+		"/Users/swarnaananthan/peloton_api/api/db/magichat/schema/change-logs/changelog-0042.json",
+		"/Users/swarnaananthan/peloton_api/api/db/magichat/schema/change-logs/changelog-0038.json",
+		"/Users/swarnaananthan/peloton_api/api/db/magichat/schema/change-logs/changelog-0030.json",
+		"/Users/swarnaananthan/peloton_api/api/db/magichat/schema/change-logs/changelog-0019.json",
+		"/Users/swarnaananthan/peloton_api/api/db/magichat/schema/change-logs/changelog-0026.json",
+		"/Users/swarnaananthan/peloton_api/api/db/magichat/schema/change-logs/changelog-0305.json",
+		"/Users/swarnaananthan/peloton_api/api/data/models/user.py",
+		"/Users/swarnaananthan/peloton_api/api/data/models/session.py",
+		"/Users/swarnaananthan/peloton_api/api/permissions/app/validators/backends/rest_api.py",
+		"/Users/swarnaananthan/peloton_api/api/lib/orm/base/models.py",
+		"/Users/swarnaananthan/peloton_api/api/lib/config/__init__.py",
+		"/Users/swarnaananthan/peloton_api/api/data/services/auth.py",
+		"/Users/swarnaananthan/storycircles/illustration/jackandthebeanstalk/interactive_animations/Scene_21.json",
+		"/Users/swarnaananthan/storycircles/apiclonenew/apiservices/StoryCirclesAPI/scripts.sql",
+		"/Users/swarnaananthan/storycircles/illustration/jackandthebeanstalk/interactive_animations/jackandbeanstalk_pictures_1.json",
+		"/Users/swarnaananthan/storycircles/apiclonenew/apiservices/StoryCirclesAPI/datascripts/create_stories.sql",
+		"/Users/swarnaananthan/storycircles/illustration/jackandthebeanstalk/interactive_animations/Scene_18.json",
+		"/Users/swarnaananthan/storycircles/illustration/jackandthebeanstalk/interactive_animations/Scene_15.json",
+		"/Users/swarnaananthan/ios_apps/SampleAudioStream/Podfile",
+		"/Users/swarnaananthan/storycircles/illustration/three_little_pigs_story_spanish",
+		"/Users/swarnaananthan/ios_apps/haishinkit-livestream/testhaishinstream/Podfile",
+		"/Users/swarnaananthan/storycircles/wowza/gocoder-sdk-ios-build-0877-v1.5.1/broadcastErrorLogs",
+		"/Users/swarnaananthan/ios_apps/haishinkit-livestream/testhaishin/Podfile",
+		"/Users/swarnaananthan/ios_apps/haishinkit-livestream/lf_haishinkit_test/Podfile",
+		"/Users/swarnaananthan/storycircles/wowza/gocoder-sdk-ios-build-0735-v1.0.5/wowza_go_coder_error_logs",
+		"/Users/swarnaananthan/peloton_api/api/wsgi.py",
+		"/Users/swarnaananthan/peloton_api/api/Vagrantfile",
+		"/Users/swarnaananthan/peloton_api/api/server.py",
+		"/Users/swarnaananthan/peloton_api/api/requirements.txt",
+		"/Users/swarnaananthan/peloton_api/api/app.py",
+		"/Users/swarnaananthan/peloton_api/api/config.json",
+		"/Users/swarnaananthan/peloton_api/api/requirements-dev.txt",
+		"/Users/swarnaananthan/peloton_api/api/README.md",
+		"/Users/swarnaananthan/peloton_api/api/pip-requirements.txt",
+		"/Users/swarnaananthan/peloton_api/api/pip-requirements-dev.txt",
+		"/Users/swarnaananthan/peloton_api/api/peloton_uwsgi.ini",
+		"/Users/swarnaananthan/peloton_api/api/makefile",
+		"/Users/swarnaananthan/peloton_api/api/rest_api/app/server/controllers/workout.py",
+		"/Users/swarnaananthan/peloton_api/api/cassandra_dump/cassandra_dump/main.py",
+		"/Users/swarnaananthan/peloton_api/api/data/models/workout.py",
+		"/Users/swarnaananthan/peloton_api/api/db/newglarus/scripts/start_server.sh",
+		"/Users/swarnaananthan/peloton_api/api/rest_api/app/server/controllers/peloton.py",
+		"/Users/swarnaananthan/peloton_api/api/cassandra_dump/setup.py",
+		"/Users/swarnaananthan/peloton_api/api/db/settings.py",
+		"/Users/swarnaananthan/storycircles/testJson/vod_stories.json",
+		"/Users/swarnaananthan/storycircles/illustration/jackandthebeanstalk/interactive_animations/Scene_4.json",
+		"/Users/swarnaananthan/storycircles/illustration/jackandthebeanstalk/interactive_animations/Scene_9.json",
+		"/Users/swarnaananthan/storycircles/illustration/jackandthebeanstalk/interactive_animations/Scene_8.json",
+		"/Users/swarnaananthan/storycircles/illustration/jackandthebeanstalk/interactive_animations/Scene_11.json",
+		"/Users/swarnaananthan/storycircles/illustration/jackandthebeanstalk/interactive_animations/Scene_10.json",
+		"/Users/swarnaananthan/storycircles/illustration/jackandthebeanstalk/interactive_animations/Scene_6.json",
+		"/Users/swarnaananthan/storycircles/illustration/jackandthebeanstalk/interactive_animations/Scene_7.json",
+		"/Users/swarnaananthan/storycircles/illustration/jackandthebeanstalk/interactive_animations/Scene_3.json",
+		"/Users/swarnaananthan/storycircles/illustration/jackandthebeanstalk/interactive_animations/Scene_5.json",
+		"/Users/swarnaananthan/storycircles/illustration/jackandthebeanstalk/interactive_animations/Scene_2.json",
+		"/Users/swarnaananthan/storycircles/illustration/live-stories_stub.json",
+		"/Users/swarnaananthan/storycircles/illustration/jackandthebeanstalk/interactive_animations/jack_bean_stalk_circle.json",
+		"/Users/swarnaananthan/storycircles/illustration/jackandthebeanstalk/interactive_animations/Scene_1.json",
+		"/Users/swarnaananthan/storycircles/illustration/jackandthebeanstalk/jackandbeanstalk_pictures",
+		"/Users/swarnaananthan/storycircles/wowza/confbackup/conf/vods3/Application.xml",
+		"/Users/swarnaananthan/storycircles/wowza/confbackup/conf/MediaCache.xml",
+		"/Users/swarnaananthan/storycircles/wowza/confbackup/conf/livelowlattest/Application.xml",
+		"/Users/swarnaananthan/storycircles/testJson/appstatus.json",
+		"/Users/swarnaananthan/storycircles/apiclonenew/apiservices/StoryCirclesAPI/src/main/resources/application_local_swarna.properties",
+		"/Users/swarnaananthan/storycircles/apiclonenew/apiservices/StoryCirclesAPI/src/main/resources/application_aws.properties",
+		"/Users/swarnaananthan/storycircles/apiclonenew/apiservices/StoryCirclesAPI/src/main/resources/application.properties",
+		"/Users/swarnaananthan/storycircles/apiclonenew/apiservices/StoryCirclesAPI/datascripts/create_circle.sql",
+		"/Users/swarnaananthan/Downloads/awsaccessKeys.csv",
+		"/Users/swarnaananthan/storycircles/apiclonenew/apiservices/StoryCirclesAPI/datascripts/create_pictures.sql",
+		"/Users/swarnaananthan/peloton_api/api/db/magichat/schema/change-logs/changelog-0002.json",
+		"/Users/swarnaananthan/peloton_api/api/db/magichat/schema/change-logs/changelog-master.json",
+		"/Users/swarnaananthan/peloton_api/api/db/magichat/schema/change-logs/changelog-template.json",
+		"/Users/swarnaananthan/peloton_api/api/db/magichat/schema/change-logs/changelog-0014.json",
+		"/Users/swarnaananthan/peloton_api/api/db/magichat/schema/change-logs/changelog-0013.json",
+		"/Users/swarnaananthan/peloton_api/api/db/magichat/schema/change-logs/changelog-0015.json",
+		"/Users/swarnaananthan/peloton_api/api/db/magichat/schema/change-logs/changelog-0001.json",
+		"/Users/swarnaananthan/peloton_api/api/db/magichat/schema/change-logs/changelog-0003.json",
+		"/Users/swarnaananthan/peloton_api/api/db/magichat/schema/change-logs/changelog-0016.json",
+		"/Users/swarnaananthan/peloton_api/api/db/magichat/schema/change-logs/changelog-0012.json",
+		"/Users/swarnaananthan/peloton_api/api/db/magichat/schema/change-logs/changelog-0011.json",
+		"/Users/swarnaananthan/peloton_api/api/db/magichat/schema/change-logs/changelog-0008.json",
+		"/Users/swarnaananthan/peloton_api/api/db/magichat/schema/change-logs/changelog-0010.json",
+		"/Users/swarnaananthan/peloton_api/api/db/magichat/schema/change-logs/changelog-0007.json",
+		"/Users/swarnaananthan/peloton_api/api/db/magichat/schema/change-logs/changelog-0004.json",
+		"/Users/swarnaananthan/peloton_api/api/db/magichat/schema/change-logs/changelog-0006.json",
+		"/Users/swarnaananthan/peloton_api/api/db/magichat/schema/change-logs/changelog-0005.json",
+		"/Users/swarnaananthan/peloton_api/api/scripts/migrations/schema/schema_ride.json",
+		"/Users/swarnaananthan/peloton_api/api/scripts/migrations/migrate.py",
+		"/Users/swarnaananthan/storycircles/apiclonenew/apiservices/StoryCirclesAPI/src/main/resources/application_local.properties",
+		"/Users/swarnaananthan/ios_apps/StoryCircles/StoryCircles.xcodeproj/project.pbxproj",
+		"/Users/swarnaananthan/storycircles/sdk_broadcasting/Streamaxia_OpenSDK_iOS_v3.3/ReadMe_iOS.md",
+		"/Users/swarnaananthan/storycircles/wowza/streaming_audio_logs_v1.0.5_build735/xcode_logs",
+		"/Users/swarnaananthan/storycircles/wowza/streaming_xcode_logs",
+		"/Users/swarnaananthan/storycircles/apiclonenew/apiservices/StoryCirclesAPI/src/main/java/com/storycircles/service/impl/PictureServiceImpl.java",
+		"/Users/swarnaananthan/storycircles/illustration/threelittlepigs/interactive_animation/scene_3.json",
+		"/Users/swarnaananthan/storycircles/testJson/live_stories_4.json",
+		"/Users/swarnaananthan/storycircles/apiclonenew/apiservices/StoryCirclesAPI/pom.xml"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 101.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 102.0
+	},
+	"pinned_build_system": "",
+	"project": "api.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 273.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
