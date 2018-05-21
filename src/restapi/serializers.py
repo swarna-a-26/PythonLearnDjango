@@ -32,3 +32,4 @@ class SnippetSerializer(serializers.Serializer):
 class CircleSerializer(serializers.ModelSerializer):
     class Meta:
         model = Circle
+        fields = '__all__' 

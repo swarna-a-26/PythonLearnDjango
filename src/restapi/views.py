@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt
 from django.http import HttpResponse,JsonResponse
-from .serializers import SnippetSerializer
+from .serializers import SnippetSerializer,CircleSerializer
 from rest_framework import status
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
@@ -13,7 +13,8 @@ from restapi.models import User
 from rest_framework import viewsets
 from django.db.models import Q
 
-from .models import Snippet
+from .models import Snippet,Circle
+
 
 
 # Create your views here
@@ -51,9 +52,9 @@ class CircleViewSet(viewsets.ViewSet):
         #Entry.objects.extra(where=["foo='a' OR bar = 'a'", "baz = 'a'"])
         #Blog.objects.filter(pk__in=[1, 4, 7])
         group_access = request.query_params.get('groupAccess')
-        on_demand_status = request.query_params("onDemandStatus")
+        on_demand_status = request.query_params.get("onDemandStatus")
         queryset = Circle.objects.get( Q(on_demand_status=on_demand_status),Q(group_access=group_access) | Q(group_access__isnull=True))
-        serializer = CircleSerializer(queryset, many=True)
+        serializer = CircleSerializer(queryset)
         return Response(serializer.data)
 
 class TestAuthView(APIView):
