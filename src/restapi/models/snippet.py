@@ -1,5 +1,4 @@
 from django.db import models
-#from django.contrib.auth.models import AbstractUser
 
 # Create your models here.
 class Snippet(models.Model):
@@ -13,6 +12,3 @@ class Snippet(models.Model):
     class Meta:
         ordering = ('created',)
         db_table = 'snippet'
-
-#class ScUser(AbstractUser):
-#	pass

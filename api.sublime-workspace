@@ -47,6 +47,66 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "src/restapi/models.py",
+			"settings":
+			{
+				"buffer_size": 1272,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 4969 files for \"create_user\"\n\n/Users/swarnaananthan/python-learn-django/PythonLearnDjango/lib/python3.6/site-packages/django/contrib/auth/models.py:\n  141      use_in_migrations = True\n  142  \n  143:     def _create_user(self, username, email, password, **extra_fields):\n  144          \"\"\"\n  145          Creates and saves a User with the given username, email and password.\n  ...\n  154          return user\n  155  \n  156:     def create_user(self, username, email=None, password=None, **extra_fields):\n  157          extra_fields.setdefault('is_staff', False)\n  158          extra_fields.setdefault('is_superuser', False)\n  159:         return self._create_user(username, email, password, **extra_fields)\n  160  \n  161      def create_superuser(self, username, email, password, **extra_fields):\n  ...\n  168              raise ValueError('Superuser must have is_superuser=True.')\n  169  \n  170:         return self._create_user(username, email, password, **extra_fields)\n  171  \n  172  \n\n/Users/swarnaananthan/python-learn-django/PythonLearnDjango/lib/python3.6/site-packages/django/db/backends/oracle/creation.py:\n  313  \n  314      def _test_user_create(self):\n  315:         return self._test_settings_get('CREATE_USER', default=True)\n  316  \n  317      def _test_database_user(self):\n\n/Users/swarnaananthan/python-learn-django/PythonLearnDjango/lib/python3.6/site-packages/rest_framework/authtoken/management/commands/drf_create_token.py:\n   10      help = 'Create DRF Token for a given user'\n   11  \n   12:     def create_user_token(self, username, reset_token):\n   13          user = UserModel._default_manager.get_by_natural_key(username)\n   14  \n   ..\n   36  \n   37          try:\n   38:             token = self.create_user_token(username, reset_token)\n   39          except UserModel.DoesNotExist:\n   40              raise CommandError(\n\n7 matches across 3 files\n",
+			"settings":
+			{
+				"buffer_size": 1882,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "lib/python3.6/site-packages/django/contrib/auth/models.py",
+			"settings":
+			{
+				"buffer_size": 15001,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/api/urls.py",
+			"settings":
+			{
+				"buffer_size": 810,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lib/python3.6/site-packages/django/contrib/auth/base_user.py",
+			"settings":
+			{
+				"buffer_size": 4973,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/restapi/views.py",
+			"settings":
+			{
+				"buffer_size": 1750,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lib/python3.6/site-packages/django/db/models/manager.py",
+			"settings":
+			{
+				"buffer_size": 7232,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -85,10 +145,27 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/swarnaananthan/python-learn-django/PythonLearnDjango"
+		"/Users/swarnaananthan/python-learn-django/PythonLearnDjango",
+		"/Users/swarnaananthan/python-learn-django/PythonLearnDjango/src",
+		"/Users/swarnaananthan/python-learn-django/PythonLearnDjango/src/api",
+		"/Users/swarnaananthan/python-learn-django/PythonLearnDjango/src/restapi",
+		"/Users/swarnaananthan/python-learn-django/PythonLearnDjango/src/restapi/migrations"
 	],
 	"file_history":
 	[
+		"/Users/swarnaananthan/python-learn-django/PythonLearnDjango/lib/python3.6/site-packages/django/contrib/postgres/fields/array.py",
+		"/Users/swarnaananthan/python-learn-django/PythonLearnDjango/lib/python3.6/site-packages/django/db/models/__init__.py",
+		"/Users/swarnaananthan/python-learn-django/PythonLearnDjango/lib/python3.6/site-packages/django/contrib/admin/helpers.py",
+		"/Users/swarnaananthan/python-learn-django/PythonLearnDjango/src/restapi/views.py",
+		"/Users/swarnaananthan/python-learn-django/PythonLearnDjango/src/restapi/models.py",
+		"/Users/swarnaananthan/python-learn-django/PythonLearnDjango/lib/python3.6/site-packages/django/db/models/fields/__init__.py",
+		"/Users/swarnaananthan/python-learn-django/PythonLearnDjango/src/api/settings.py",
+		"/Users/swarnaananthan/python-learn-django/PythonLearnDjango/lib/python3.6/site-packages/django/conf/global_settings.py",
+		"/Users/swarnaananthan/python-learn-django/PythonLearnDjango/src/restapi/migrations/0003_user.py",
+		"/Users/swarnaananthan/python-learn-django/PythonLearnDjango/src/restapi/serializers.py",
+		"/Users/swarnaananthan/python-learn-django/PythonLearnDjango/src/restapi/urls.py",
+		"/Users/swarnaananthan/python-learn-django/PythonLearnDjango/src/api/urls.py",
+		"/Users/swarnaananthan/python-learn-django/PythonLearnDjango/lib/python3.6/site-packages/django/http/response.py",
 		"/Users/swarnaananthan/peloton_api/api/lib/orm/base/managers.py",
 		"/Users/swarnaananthan/peloton_api/api/rest_api/app/server/controllers/ride.py",
 		"/Users/swarnaananthan/peloton_api/api/data/models/ride.py",
@@ -203,30 +280,20 @@
 		"/Users/swarnaananthan/peloton_api/api/db/magichat/schema/change-logs/changelog-0008.json",
 		"/Users/swarnaananthan/peloton_api/api/db/magichat/schema/change-logs/changelog-0010.json",
 		"/Users/swarnaananthan/peloton_api/api/db/magichat/schema/change-logs/changelog-0007.json",
-		"/Users/swarnaananthan/peloton_api/api/db/magichat/schema/change-logs/changelog-0004.json",
-		"/Users/swarnaananthan/peloton_api/api/db/magichat/schema/change-logs/changelog-0006.json",
-		"/Users/swarnaananthan/peloton_api/api/db/magichat/schema/change-logs/changelog-0005.json",
-		"/Users/swarnaananthan/peloton_api/api/scripts/migrations/schema/schema_ride.json",
-		"/Users/swarnaananthan/peloton_api/api/scripts/migrations/migrate.py",
-		"/Users/swarnaananthan/storycircles/apiclonenew/apiservices/StoryCirclesAPI/src/main/resources/application_local.properties",
-		"/Users/swarnaananthan/ios_apps/StoryCircles/StoryCircles.xcodeproj/project.pbxproj",
-		"/Users/swarnaananthan/storycircles/sdk_broadcasting/Streamaxia_OpenSDK_iOS_v3.3/ReadMe_iOS.md",
-		"/Users/swarnaananthan/storycircles/wowza/streaming_audio_logs_v1.0.5_build735/xcode_logs",
-		"/Users/swarnaananthan/storycircles/wowza/streaming_xcode_logs",
-		"/Users/swarnaananthan/storycircles/apiclonenew/apiservices/StoryCirclesAPI/src/main/java/com/storycircles/service/impl/PictureServiceImpl.java",
-		"/Users/swarnaananthan/storycircles/illustration/threelittlepigs/interactive_animation/scene_3.json",
-		"/Users/swarnaananthan/storycircles/testJson/live_stories_4.json",
-		"/Users/swarnaananthan/storycircles/apiclonenew/apiservices/StoryCirclesAPI/pom.xml"
+		"/Users/swarnaananthan/peloton_api/api/db/magichat/schema/change-logs/changelog-0004.json"
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 39.0
 	},
 	"find_in_files":
 	{
 		"height": 101.0,
 		"where_history":
 		[
+			"/Users/swarnaananthan/python-learn-django/PythonLearnDjango/lib",
+			"/Users/swarnaananthan/python-learn-django/PythonLearnDjango,/Users/swarnaananthan/python-learn-django/PythonLearnDjango/src",
+			"/Users/swarnaananthan/python-learn-django/PythonLearnDjango"
 		]
 	},
 	"find_state":
@@ -234,6 +301,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"objects",
+			"create_user",
+			"password",
+			"AUTH_USER_MODEL",
+			"django.contrib.auth",
+			"django.contrib.auth.authenticate"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -251,8 +324,268 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "src/restapi/models.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1272,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1242,
+								1242
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.python - string - comment - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								}
+							],
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 41.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1882,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										219,
+										230
+									],
+									[
+										441,
+										452
+									],
+									[
+										661,
+										672
+									],
+									[
+										926,
+										937
+									],
+									[
+										1220,
+										1231
+									],
+									[
+										1530,
+										1541
+									],
+									[
+										1730,
+										1741
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								224,
+								224
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([^ \t].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "lib/python3.6/site-packages/django/contrib/auth/models.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 15001,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5141,
+								5380
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1950.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/api/urls.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 810,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "lib/python3.6/site-packages/django/contrib/auth/base_user.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4973,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3201,
+								3201
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/restapi/views.py",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1750,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "lib/python3.6/site-packages/django/db/models/manager.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7232,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6157,
+								6157
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -262,7 +595,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 35.0
 	},
 	"layout":
 	{

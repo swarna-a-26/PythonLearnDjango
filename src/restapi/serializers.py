@@ -1,5 +1,7 @@
 from rest_framework import serializers
-from .models import Snippet
+from .models.snippet import Snippet
+from .models import Circle
+ 
 
 class SnippetSerializer(serializers.Serializer):
     id = serializers.IntegerField(read_only=True)
@@ -26,3 +28,7 @@ class SnippetSerializer(serializers.Serializer):
         instance.style = validated_data.get('style', instance.style)
         instance.save()
         return instance
+
+class CircleSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Circle

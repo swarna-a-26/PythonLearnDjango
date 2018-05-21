@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {"python.autoComplete.extraPaths": ["/Users/swarnaananthan/python-learn-django/PythonLearnDjango/lib",
+													"/Users/swarnaananthan/python-learn-django/PythonLearnDjango/lib/python3.6/site-packages",
+												   ],
+				 "python.autoComplete.preloadModules": ["django"],
+				 "python.linting.pylintArgs": ["--load-plugins", "pylint_django"]
+				}
+}
