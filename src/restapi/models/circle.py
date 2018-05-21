@@ -7,7 +7,6 @@ class Circle(models.Model):
     circle_id = models.AutoField(primary_key=True)
     story = models.ForeignKey(Story)
     duration = models.IntegerField(blank=True)
-    is_active = models.BooleanField(default=False)
     album_image = models.TextField()
     teller_image = models.TextField()
     teller_name = models.TextField(blank=True)

@@ -30,6 +30,8 @@ class SnippetSerializer(serializers.Serializer):
         return instance
 
 class CircleSerializer(serializers.ModelSerializer):
+    allow_empty = True
+    
     class Meta:
         model = Circle
         fields = '__all__' 

@@ -53,8 +53,8 @@ class CircleViewSet(viewsets.ViewSet):
         #Blog.objects.filter(pk__in=[1, 4, 7])
         group_access = request.query_params.get('groupAccess')
         on_demand_status = request.query_params.get("onDemandStatus")
-        queryset = Circle.objects.get( Q(on_demand_status=on_demand_status),Q(group_access=group_access) | Q(group_access__isnull=True))
-        serializer = CircleSerializer(queryset)
+        queryset = Circle.objects.filter(Q(on_demand_status=on_demand_status),Q(group_access=group_access) | Q(group_access__isnull=True) | Q(group_access=""))
+        serializer = CircleSerializer(queryset,many=True)
         return Response(serializer.data)
 
 class TestAuthView(APIView):
