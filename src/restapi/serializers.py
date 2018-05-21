@@ -33,3 +33,4 @@ class CircleSerializer(serializers.ModelSerializer):
     class Meta:
         model = Circle
         fields = '__all__' 
+        depth=1
