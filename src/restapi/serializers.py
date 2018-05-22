@@ -30,9 +30,19 @@ class SnippetSerializer(serializers.Serializer):
         return instance
 
 class CircleSerializer(serializers.ModelSerializer):
-    allow_empty = True
-    
+    story_title = serializers.SerializerMethodField()
+    story_id = serializers.SerializerMethodField()
+    age_group = serializers.SerializerMethodField()
+
     class Meta:
         model = Circle
-        fields = '__all__' 
-        depth=1
+        exclude = ('story',)
+        
+    def get_story_title(self, instance):
+        return instance.story.story_title
+
+    def get_story_id(self, instance):
+        return instance.story.story_id
+    
+    def get_age_group(self, instance):
+        return instance.story.age_group
