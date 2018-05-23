@@ -30,36 +30,25 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
+    #'django.contrib.auth',
+   # 'django.contrib.contenttypes',
+   # 'django.contrib.sessions',
+   # 'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
     'restapi'
 ]
-AUTH_USER_MODEL = 'restapi.User'
-
-#INSTALLED_APPS = [
-    #'django.contrib.admin',
-    #'django.contrib.auth',
-    #'django.contrib.contenttypes',
-    #'django.contrib.sessions',
-    #'django.contrib.messages',
-    #'django.contrib.staticfiles',
-    #'rest_framework',
-    #'restapi'
-#]
+#AUTH_USER_MODEL = 'restapi.User'
 
 
 MIDDLEWARE = [
-    'django.middleware.security.SecurityMiddleware',
-    'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
-    'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+   # 'django.middleware.security.SecurityMiddleware',
+    #'django.contrib.sessions.middleware.SessionMiddleware',
+    #'django.middleware.common.CommonMiddleware',
+    #'django.middleware.csrf.CsrfViewMiddleware',
+   # 'django.contrib.auth.middleware.AuthenticationMiddleware',
+   # 'django.contrib.messages.middleware.MessageMiddleware',
+   # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
 ROOT_URLCONF = 'api.urls'
@@ -94,15 +83,25 @@ WSGI_APPLICATION = 'api.wsgi.application'
 #}
 
 DATABASES = {
+    #'default': {
+     #   'ENGINE': 'django.db.backends.postgresql',
+      #  'NAME': 'story_circle_test',                      
+       # 'USER': 'postgres',
+       # 'PASSWORD': '',
+        #'HOST': '127.0.0.1',
+        #'PORT': '5432',
+    #}
+    
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'story_circle_test',                      
-        'USER': 'postgres',
-        'PASSWORD': '',
-        'HOST': '127.0.0.1',
+        'NAME': 'story_circle',                      
+        'USER': 'sadmin',
+        'PASSWORD': 'Password123!',
+        'HOST': 'dev-story.c7thyhbvvjno.us-east-1.rds.amazonaws.com',
         'PORT': '5432',
     }
 }
+
 
 
 # Password validation
@@ -143,9 +142,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-REST_FRAMEWORK = {
-    'DEFAULT_PERMISSION_CLASSES': (
-        'rest_framework.permissions.IsAuthenticated',
-    )
-}
+#REST_FRAMEWORK = {
+   # 'DEFAULT_PERMISSION_CLASSES': (
+    #    'rest_framework.permissions.IsAuthenticated',
+    #)
+#}
 

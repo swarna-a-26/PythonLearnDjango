@@ -6,10 +6,10 @@ from rest_framework import status
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework.views import APIView
-from rest_framework.permissions import IsAuthenticated
-from rest_framework.permissions import AllowAny
-from rest_framework.authentication import BasicAuthentication,SessionAuthentication
-from restapi.models import User
+#from rest_framework.permissions import IsAuthenticated
+#from rest_framework.permissions import AllowAny
+#from rest_framework.authentication import BasicAuthentication,SessionAuthentication
+#from restapi.models import User
 from rest_framework import viewsets
 from django.db.models import Q
 
@@ -18,30 +18,30 @@ from .models import Snippet,Circle
 
 
 # Create your views here
-class TestView(APIView):
-    permission_classes = (IsAuthenticated,)
-    def get(self, request, format=None):
-        username = request.query_params.get('username')
-        response = dict()
-        response["username"] = username
-        print ("META", request.META['HTTP_COOKIE'])
-        return Response(response)
+#class TestView(APIView):
+ #   permission_classes = (IsAuthenticated,)
+  #  def get(self, request, format=None):
+   #     username = request.query_params.get('username')
+    #    response = dict()
+     #   response["username"] = username
+      #  print ("META", request.META['HTTP_COOKIE'])
+       # return Response(response)
 
-    def post(self, request, format=None):
-        username = request.data["testpstuser"]
-        response = dict()
-        response["testpstuser"] = username
-        return Response(response)
+   # def post(self, request, format=None):
+    #    username = request.data["testpstuser"]
+     #   response = dict()
+      #  response["testpstuser"] = username
+       # return Response(response)
 
-class CustomAuth(BasicAuthentication):
-    def authenticate(self, request):
-        email = request.data["username"]
-        password = request.data["password"]
-        user = self.authenticate_credentials(email, password, request)
-        print ("Custom Auth:")
-        print (user)
-        print(user[0])
-        return user
+#class CustomAuth(BasicAuthentication):
+ #   def authenticate(self, request):
+   #     email = request.data["username"]
+    #    password = request.data["password"]
+     #   user = self.authenticate_credentials(email, password, request)
+      #  print ("Custom Auth:")
+      #  print (user)
+     #   print(user[0])
+      #  return user
 
 #class CustomAuthSession(SessionAuthentication):
     #def enforce_csrf(self, request):
@@ -57,17 +57,17 @@ class CircleViewSet(viewsets.ViewSet):
         serializer = CircleSerializer(queryset,many=True)
         return Response(serializer.data)
 
-class TestAuthView(APIView):
-    authentication_classes = (SessionAuthentication, BasicAuthentication)
-    permission_classes = (IsAuthenticated,)
-    def post(self, request, format=None):
+#class TestAuthView(APIView):
+  #  authentication_classes = (SessionAuthentication, BasicAuthentication)
+   # permission_classes = (IsAuthenticated,)
+  #  def post(self, request, format=None):
         #print("csrf_token",csrf_token)
-        content = {
-            'user': request.user.email,
-            'auth': request.auth,  # None
-        }
+    #    content = {
+     #       'user': request.user.email,
+      #      'auth': request.auth,  # None
+       # }
         #print (request.META)
-        return Response(content)
+      #  return Response(content)
 
 
 
