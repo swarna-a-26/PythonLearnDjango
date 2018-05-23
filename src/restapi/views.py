@@ -57,6 +57,19 @@ class CircleViewSet(viewsets.ViewSet):
         serializer = CircleSerializer(queryset,many=True)
         return Response(serializer.data)
 
+@csrf_exempt
+def circle_list(request):
+    if request.method == 'GET':
+        params = request.GET
+        group_access = params.get('groupAccess')
+        on_demand_status = params.get("onDemandStatus")
+        print("group_access:",group_access )
+        print("on_demand_status:",on_demand_status )
+        queryset = Circle.objects.filter(Q(on_demand_status=on_demand_status),Q(group_access=group_access) | Q(group_access__isnull=True) | Q(group_access=""))
+        serializer = CircleSerializer(queryset,many=True)
+        return JsonResponse(serializer.data, safe=False)
+
+
 #class TestAuthView(APIView):
   #  authentication_classes = (SessionAuthentication, BasicAuthentication)
    # permission_classes = (IsAuthenticated,)

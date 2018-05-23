@@ -7,5 +7,7 @@ urlpatterns = [
     #url(r'^testgetquery/$',views.TestView.as_view()),
    # url(r'^testpostquery$',views.TestView.as_view()),
     #url(r'^testauth$',views.TestAuthView.as_view()),
-    url(r'^onDemandStories$',views.CircleViewSet.as_view({'get': 'list'}))
+   # url(r'^onDemandStories$',views.CircleViewSet.as_view({'get': 'list'}))
+    url(r'^onDemandStories$',views.circle_list)
+   
 ]
